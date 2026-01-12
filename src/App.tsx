@@ -18,6 +18,9 @@ import ListeningContent from "./pages/learn/listening/ListeningContent";
 import SpeakingModule from "./pages/learn/speaking/SpeakingModule";
 import SpeakingPractice from "./pages/learn/speaking/SpeakingPractice";
 import SpeakingFeedback from "./pages/learn/speaking/SpeakingFeedback";
+import WritingModule from "./pages/learn/writing/WritingModule";
+import WritingExercise from "./pages/learn/writing/WritingExercise";
+import WritingFeedback from "./pages/learn/writing/WritingFeedback";
 import VocabularyDashboard from "./pages/vocabulary/VocabularyDashboard";
 import VocabularyPractice from "./pages/vocabulary/VocabularyPractice";
 import Library from "./pages/Library";
@@ -52,6 +55,9 @@ const App = () => (
           <Route path="/learn/speaking/practice" element={<SpeakingPractice />} />
           <Route path="/learn/speaking/feedback" element={<SpeakingFeedback />} />
           <Route path="/learn/speaking/feedback/:id" element={<SpeakingFeedback />} />
+          <Route path="/learn/writing" element={<WritingModule />} />
+          <Route path="/learn/writing/exercise/:id" element={<WritingExercise />} />
+          <Route path="/learn/writing/feedback/:id" element={<WritingFeedback />} />
           <Route path="/vocabulary" element={<VocabularyDashboard />} />
           <Route path="/vocabulary/practice" element={<VocabularyPractice />} />
           <Route path="/library" element={<Library />} />
